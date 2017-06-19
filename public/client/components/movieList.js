@@ -8,7 +8,9 @@ angular.module('main-app') // copied mostly from ng-cast
       movies: '<'
     },
     restrict: 'E',
-    controller: function() {},
+    controller: function() {
+      // console.log(movies);
+    },
     controllerAs: 'ctrl',
     bindToController: true,
     templateUrl: 'public/client/templates/movieList.html'

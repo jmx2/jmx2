@@ -2,8 +2,8 @@ angular.module('main-app')
 
 .controller('MainCtrl', function() {
 
-  this.movies = window.dummyData;
-  // console.log(this.movies);
+  this.users = window.exampleData;
+  // console.log('users', this.users);
   // this.searchResults = (data) => {
   //   this.movies = data;
   //   this.currentVideo = this.videos[0];
