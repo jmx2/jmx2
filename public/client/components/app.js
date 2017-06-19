@@ -3,7 +3,7 @@ angular.module('main-app')
 .controller('MainCtrl', function() {
 
   this.movies = window.dummyData;
-  console.log(this.movies);
+  // console.log(this.movies);
   // this.searchResults = (data) => {
   //   this.movies = data;
   //   this.currentVideo = this.videos[0];
