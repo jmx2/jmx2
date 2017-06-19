@@ -1,4 +1,4 @@
-var dummy = [
+window.dummyData = [
 	{
 	"Title": "Terminator 2: Judgment Day",
 	"Year": "1991",
@@ -113,4 +113,4 @@ var dummy = [
 	}
 ];
 
-module.exports = dummy;
+// module.exports = dummy;

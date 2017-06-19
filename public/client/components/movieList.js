@@ -4,11 +4,13 @@ angular.module('main-app') // copied mostly from ng-cast
 // })
 .directive('movieList', function() {
   return {
-    scope: {},
+    scope: {
+      movies: '<'
+    },
     restrict: 'E',
-    // controller: 'SearchCtrl',
-    // controllerAs: 'ctrl',
-    // bindToController: true,
+    controller: function() {},
+    controllerAs: 'ctrl',
+    bindToController: true,
     templateUrl: 'public/client/templates/movieList.html'
   };
 });
