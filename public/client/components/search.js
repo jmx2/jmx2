@@ -8,7 +8,7 @@ angular.module('main-app')
     this.TMDBservice.search(this.input, (data) => {
       this.results = data.results
     })
-  //console.log(this.results)
+  console.log(this.results)
   }
 })
 
