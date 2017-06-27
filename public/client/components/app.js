@@ -2,7 +2,9 @@ angular.module('main-app')
 
 .controller('MainCtrl', function(searchTheMovieDB, searchOMDB, $http) {
   this.user = {};
+  //this is my temporary solution for recommendations - MN
   this.recommendations = [];
+
   this.TMDBservice = searchTheMovieDB;
   this.OMDBService = searchOMDB;
   this.intendedUser;
@@ -13,7 +15,8 @@ angular.module('main-app')
     this.user.username = this.intendedUser.data.username;
     this.user.watched = this.intendedUser.data.watched;
 
-    // Creates the reccomendations
+    // Creates the recomendations
+    // please fix this -MN
     this.user.watched.forEach(item => {
       if (item.isFavorite) {
         this.TMDBservice.searchById(item.imdb_id, data => {
@@ -30,6 +33,7 @@ angular.module('main-app')
       };
     });
   });
+  //this line is bad too - MN
   this.recommendations = this.recommendations.filter((item, i, arr) => item !== arr[i + 1])
 })
 .directive('app', function() { // directive name is the HTML tag name REMEMBER THIS

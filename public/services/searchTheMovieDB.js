@@ -7,6 +7,7 @@
 
 angular.module('main-app')
 .service('searchTheMovieDB', function($http) {
+  //please refactor out these keys, my bad - MN
   var API_KEYS = '4d3017fc8de9100e02bc619b7791f472'
 
   // this is used to query search
