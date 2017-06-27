@@ -13,12 +13,16 @@
 
     <div class="inline-block login" ng-hide="ctrl.mode">
       <label>Age: </label>
-      <input type="age" ng-model="ctrl.password">
+      <input type="age" ng-model="ctrl.age">
     </div>
 
     <div class="inline-block login" ng-hide="ctrl.mode">
       <label>Gender: </label>
-      <input type="gender" ng-model="ctrl.password">
+      <select name="gender" ng-model="ctrl.gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select>
     </div>
 
     <input class="ugly-button sign-in login" type="submit" ng-value="ctrl.mode ? 'Sign In' : 'Sign Up'">
