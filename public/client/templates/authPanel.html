@@ -11,6 +11,16 @@
       <input type="password" ng-model="ctrl.password">
     </div>
 
+    <div class="inline-block login" ng-hide="ctrl.mode">
+      <label>Age: </label>
+      <input type="age" ng-model="ctrl.password">
+    </div>
+
+    <div class="inline-block login" ng-hide="ctrl.mode">
+      <label>Gender: </label>
+      <input type="gender" ng-model="ctrl.password">
+    </div>
+
     <input class="ugly-button sign-in login" type="submit" ng-value="ctrl.mode ? 'Sign In' : 'Sign Up'">
     <span class="login" ng-if="!ctrl.mode">Already have an account? <a href="#" ng-click="ctrl.toggleMode()" ng-submit="ctrl.toggleMode()">Click here.</a></span>
     <span class="login" ng-if="ctrl.mode">Need an account? <a href="#" ng-click="ctrl.toggleMode()" ng-submit="ctrl.toggleMode()">Click here.</a></span>

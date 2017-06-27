@@ -3,6 +3,8 @@ angular.module('main-app')
 .controller('AuthPanelCtrl', function(AuthModel) {
   this.username = '',
   this.password = '',
+  this.age = null,
+  this.gender = null,
   this.mode = true,
 
   this.toggleMode = () => {
